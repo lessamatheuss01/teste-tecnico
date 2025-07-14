@@ -4,8 +4,8 @@ Candidato: Matheus de Lima Lessa
 ## 🐳 Containers e Orquestração
 
 ### 1. Crie um `Dockerfile` para uma aplicação Node.js simples.
-'''yml
-# Usar imagem oficial do Node.js
+  ```ymml
+      # Usar imagem oficial do Node.js
 FROM node:18-alpine
 
 # Diretório de trabalho
@@ -25,6 +25,7 @@ EXPOSE 3000
 
 # Comando para iniciar a aplicação
 CMD ["node", "index.js"]
+  ```
 
 ### 2. Crie um `docker-compose.yml` com os seguintes serviços:
 
