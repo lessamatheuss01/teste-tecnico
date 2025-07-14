@@ -1,36 +1,36 @@
-# Teste Técnico – Vaga Suporte / Infra / DevOps
-Candidato: Matheus de Lima Lessa
+# Teste Prático - Git e GitHub Actions
 
-## 🐳 Containers e Orquestração
+## 📌 Propósito
 
-### 1. Crie um `Dockerfile` para uma aplicação Node.js simples.
-  ```ymml
-      # Usar imagem oficial do Node.js
-FROM node:18-alpine
+Este repositório foi criado como parte de um teste prático para demonstrar o uso de Git, GitHub Actions e automação de pipelines.
 
-# Diretório de trabalho
-WORKDIR /app
+## 🚀 Como Executar
 
-# Copiar package.json e package-lock.json para instalar dependências
-COPY package*.json ./
+Este projeto utiliza GitHub Actions para simular:
+- Execução de testes automatizados
+- Deploy automatizado
 
-# Instalar dependências
-RUN npm install
+Para testar manualmente localmente:
 
-# Copiar o restante do código
-COPY . .
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/teste-tecnico.git
+cd teste-tecnico
 
-# Expor a porta que a aplicação usará
-EXPOSE 3000
+# Conceda permissão ao script (opcional)
+chmod +x script.sh
 
-# Comando para iniciar a aplicação
-CMD ["node", "index.js"]
-  ```
+# Execute os containers com Docker Compose
+docker-compose up --build
+```
+A aplicação estará disponível em `http://localhost`.
 
-### 2. Crie um `docker-compose.yml` com os seguintes serviços:
+Também é possível executar o script individualmente:
+```bash
+./script.sh
+```
 
-- Aplicação Node.js
-- Banco de dados PostgreSQL
-- Nginx atuando como reverse proxy para a aplicação
+## 📘 Observações
+Este repositório foi criado com fins avaliativos e educacionais.
+Demonstra conhecimentos em práticas modernas de DevOps, automação, observabilidade e gerenciamento de infraestrutura.
 
-### 3. (Bônus) Explique como você faria o deploy dessa stack em um cluster Kubernetes.
