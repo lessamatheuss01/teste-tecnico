@@ -16,6 +16,7 @@ Para testar manualmente localmente:
 # Clone o repositório
 git clone https://github.com/seu-usuario/teste-tecnico.git
 cd docker
+cd github
 
 # Conceda permissão ao script (opcional)
 chmod +x script.sh
